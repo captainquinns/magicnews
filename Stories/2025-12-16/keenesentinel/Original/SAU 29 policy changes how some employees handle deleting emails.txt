@@ -1,0 +1,71 @@
+SAU 29 policy changes how some employees handle deleting emails
+
+Site: KEENESENTINEL
+Published: 2025-12-16
+URL: https://www.keenesentinel.com/news/local/sau-29-email-policy-public-records-keene-nh/article_afb78bed-099d-4d03-9d0c-a476963aa42e.html
+
+Local school officials say a relatively new email deletion policy seeks to streamline recordkeeping and expedite compliance with public record laws. But a First Amendment lawyer says getting rid of emails could hinder public right-to-know requests.
+
+The new policy was passed by the SAU 29 school board and affects employees and administrators at the SAU 29 central office, which oversees the seven districts in the SAU: Chesterfield, Harrisville, Keene, Marlow, Marlborough, Nelson and Westmoreland.
+
+The policy requires that each employee decide whether an email is important enough to be archived and saved, or if it can be deleted within 60 days.
+
+“Given the finite availability of electronic disk space, the Board finds that it is not a prudent use of the SAU’s resources to maintain many of these records indefinitely,” the policy, passed in May, says. “... The purpose of this policy is to preserve institutional history, while at the same time preserving electronic resources so that identified unnecessary data is automatically purged from the system after its useful lifespan has expired.”
+
+Justin Silverman, executive director of the New England First Amendment Coalition, says the policy could stymie people’s access to information they’re legally entitled to. SAU 29 Superintendent Robert Malay says it improves transparency as opposed to diminishing it.
+
+Among other benefits, the policy ensures files are kept in the appropriate place — like personnel information that shouldn’t exist outside the human resources department, Malay said.
+
+“The intention here is not to hide anything,” he said. “We’re trying to be responsible, make sure records are kept where they need to be kept.”
+
+But Silverman, contacted by a Sentinel reporter for comment, called the policy “very much a concerning right-to-know development.”
+
+“Even if 60 days is ultimately reasonable and in line with good practices, giving the individual employees the right to delete emails that the public will never see and never have an opportunity to access — that to me is most concerning,” he said. “There could be bad actors that will abuse that system and permanently delete the information that should be ultimately disclosed.”
+
+‘Making sure records end up where they belong’
+
+Under RSA 91-A , New Hampshire’s public record law, citizens have the right to the public records of governmental bodies, which include SAUs and school districts — records that include public meeting minutes and payment records of public employees. Some records are exempt, such as students’ records or confidential financial information.
+
+Malay said right-to-know requests for emails are “not very frequent” throughout SAU 29. He recalled one instance where he had to fulfill a request that asked for emails within a three-week window — which equated to roughly 8,000 pages to review.
+
+Other drivers that contributed to the policy’s creation include the SAU’s lack of guidelines governing email retention, and the cost of storing excess emails, Malay said.
+
+But when asked how much it would cost to expand storage space, Malay replied, “As it relates to emails, I can tell you it’s not extremely expensive.”
+
+Still, he said, the SAU shouldn’t rely on email to be a record retention system.
+
+“I don’t know that it is a transparency issue because the policy makes it transparent — those records should be archived where they belong, not in 10 people’s inboxes,” he said. “I think it actually strengthens our transparency by making sure records end up where they belong.”
+
+In crafting the policy, the SAU 29 board — made up of the chairs of the SAU’s seven school districts — looked at sample email retention policies, including in the private sector, which ranged from 30 days to 90 days, Malay said. The board split the difference.
+
+Ege Cordell, chair of the SAU and Chesterfield boards, said she doesn’t see any transparency risks with the policy.
+
+She said with a public school system, there are already guardrails in place to ensure transparency, and meetings and board actions are made available to the public.
+
+“Our budget is out there, our staffing is out there — everything is out there,” she said. “I can’t even imagine an email retention policy would affect transparency, to be honest. To me, it’s an IT thing.”
+
+However, George Downing, vice chair of the SAU board and chair of the Keene school board, said he has expressed some concerns about the policy expanding from the SAU 29 offices to the seven school districts.
+
+“I raise concerns every time [Malay] brings that up,” Downing said. “I am much more concerned [that], the further you branch out, the less likely people are to understand the difference between fluff emails and important emails.”
+
+Downing said he’s confident the central office staff is technologically savvy and has an understanding of right-to-know law. But if the policy is passed at the district level, it would apply to school board members and district employees. Between varying levels of tech knowledge and turnover among employees, Downing said it could be harder to guarantee the policy is working correctly.
+
+“There would have to be some really serious safeguards in place, in my mind, to make sure we’re not inadvertently bypassing right-to-know issues, but I have much less concern about that where the policy sits right now,” he said. He said the SAU board has been keeping tabs on the central office to ensure personnel are following the policy.
+
+“I know that they’ve also been emphasizing erring on the side of caution — ‘If you’re not sure, then save it,’” he said.
+
+But for Silverman, of the New England First Amendment Coalition, no amount of training is sufficient to prepare employees to determine what may be relevant under RSA 91-A.
+
+“Even if there is adequate training, that doesn’t address the likelihood of any bad actors within the school district who may delete emails that should be saved simply because they don’t want those emails disclosed,” he said. “This policy gives a lot of power to individual employees who may or may not be adequately trained or have the best interests of the community in mind.”
+
+Additionally, he said, the 60-day retention period seems too short, as the importance of an email for a public records request might not be known for weeks, months or years after its delivery.
+
+There is legitimacy in the SAU’s concern about the burden of combing through heaps of emails, he noted.
+
+But he said there are methods to make the process less cumbersome. They include talking with the person making a records request to specify exactly what they’re looking for, or working with them to make an accommodation for more time.
+
+“That is the route we should be going,” he said, “rather than automatically deleting these emails, and preventing members of the public from getting this information altogether after 60 days.”
+
+Malay said the district already takes these steps and putting the policy in place is a matter of improving these procedures.
+
+Bringing the policy for consideration by each of SAU 29’s member school boards likely won’t happen until next summer, according to Malay, who described it as a lower priority than other policies the board is working on.

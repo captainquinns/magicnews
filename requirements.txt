@@ -1,0 +1,8 @@
+streamlit
+openai
+beautifulsoup4
+requests
+lxml
+certifi
+urllib3<2
+pyperclip

@@ -1,0 +1,15 @@
+cd '/Users/quinnwilson/Documents/NewsArchive'
+source vvenv/bin/activate
+
+
+Keene Sentinel
+j.goodell@me.com
+967wtsafm
+
+
+
+
+
+Brat Reformer
+jared@magic967.com
+967wtsafm

@@ -1,0 +1,111 @@
+[cite_start][cite: 1] MAGIC NEWS REWRITER - SETUP & MAINTENANCE GUIDE
+=========================================================
+
+1. SYSTEM REQUIREMENTS
+----------------------
+- Operating System: macOS (recommended) or Windows/Linux
+- Python: Version 3.9 or higher
+- Browser: Chrome or Safari (for extracting cookies)
+- OpenAI Account: An active API Key (gpt-4o-mini access)
+
+2. INITIAL INSTALLATION (FROM SCRATCH)
+--------------------------------------
+If you are moving this project to a new computer, follow these steps:
+
+1. Create a Project Folder:
+   Create a folder named "NewsArchive" and place all project files inside.
+
+2. Open Terminal:
+   Navigate to the folder:
+   cd ~/Documents/NewsArchive
+
+3. Create a Virtual Environment:
+   (This keeps your libraries isolated from the system)
+   python3 -m venv vvenv
+
+4. Activate the Environment:
+   source vvenv/bin/activate
+
+5. Install Dependencies:
+   (Create a file named requirements.txt with the content below if missing)
+   pip install -r requirements.txt
+
+   [Content for requirements.txt]:
+   streamlit
+   requests
+   beautifulsoup4
+   lxml
+   openai
+
+3. CONFIGURATION
+----------------
+Before running, you must set your OpenAI Key.
+
+Option A (Temporary - per session):
+   export OPENAI_API_KEY="sk-proj-..."
+
+Option B (Permanent - recommended for Mac):
+   1. Open your shell profile: nano ~/.zshrc
+   2. Add this line to the bottom: export OPENAI_API_KEY="sk-proj-..."
+   3. Save (Ctrl+O, Enter) and Exit (Ctrl+X).
+   4. Restart Terminal.
+
+4. RUNNING THE APP
+------------------
+Make sure your virtual environment is active (`source vvenv/bin/activate`).
+
+A. To use the GUI (Select, Rewrite, Review):
+   streamlit run app.py
+
+B. To run the Scraper only (Background Update):
+   python3 scraper.py --site all --date 2025-12-16
+   (Omit --date to default to today)
+
+5. MAINTENANCE: FIXING KEENE SENTINEL
+-------------------------------------
+The Keene Sentinel scraper uses a "Session Cookie" to prove you are a subscriber.
+This cookie WILL EXPIRE (usually every 6-12 months, or if you log out).
+
+SYMPTOMS OF EXPIRATION:
+- Scraper logs show "0 articles found".
+- Scraper logs show "Soft 404" or "Redirected".
+- 401/403 Errors in the terminal.
+
+HOW TO FIX IT (5-Minute Task):
+
+1. Open your Web Browser (Chrome/Safari).
+2. Go to keenesentinel.com and Log In.
+3. IMPORTANT: Click on any "Subscriber Only" article to ensure the session is active.
+4. Open Developer Tools:
+   - Chrome: Right-click page -> Inspect -> Network Tab.
+   - Safari: Develop Menu -> Show Web Inspector -> Network Tab.
+5. Refresh the page.
+6. Scroll to the very top of the file list in the Network tab.
+7. Click the first file (usually named "article_..." or "www.keenesentinel.com").
+8. Look at the "Headers" tab on the right.
+9. Scroll down to "Request Headers".
+10. Find the word "Cookie:".
+11. Copy the HUGE string of text next to it.
+12. Open the file `scrapers/keenesentinel.py` in your code editor.
+13. Paste the string into the `USER_COOKIE` variable at the top.
+14. Save and run the scraper to test.
+
+6. COMMON TROUBLESHOOTING
+-------------------------
+
+Issue: "ImportError: attempted relative import with no known parent package"
+Fix:   You are trying to run a file inside the `scrapers/` folder directly.
+       ALWAYS run the main script from the root folder:
+       CORRECT: python3 scraper.py
+       WRONG:   python3 scrapers/keenesentinel.py
+
+Issue: Double URLs (e.g., https://keenesentinel.comhttps://...)
+Fix:   The API changed its data format. The current script uses `urljoin` to fix this automatically.
+       Ensure you are using the latest version of `scrapers/keenesentinel.py`.
+
+Issue: "AttributeError: 'list' object has no attribute 'startswith'"
+Fix:   The website API changed how it delivers text (list vs string).
+       The current script handles this in the `clean_html_text` function.
+
+Issue: OpenAI Error "API Key not found"
+Fix:   The environment variable is not set. Run `export OPENAI_API_KEY="sk-..."` in your terminal before running the app.
