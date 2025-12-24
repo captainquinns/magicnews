@@ -6,8 +6,38 @@ import shutil
 from datetime import date
 from pathlib import Path
 from collections import defaultdict
+from streamlit.runtime.scriptrunner import get_script_run_ctx
 
 st.cache_data.clear()
+
+# --- NEW AUTO-SHUTDOWN WATCHDOG ---
+import threading
+import os
+from streamlit.runtime import Runtime
+
+def watch_for_disconnect():
+    """
+    Background process: Checks every 2 seconds if a browser is connected.
+    If no browsers are connected, it kills the terminal process.
+    """
+    while True:
+        time.sleep(5)
+        try:
+            # Check if there are any active browser sessions
+            if not Runtime.instance()._session_mgr.list_active_sessions():
+                # Double check after a short wait (in case of page refresh)
+                time.sleep(5)
+                if not Runtime.instance()._session_mgr.list_active_sessions():
+                    print("Browser closed. Shutting down server...")
+                    os._exit(0) # Force kills the terminal
+        except Exception:
+            pass # Runtime might not be ready yet, just keep waiting
+
+# Start the watchdog thread only once when the app launches
+if "watchdog_started" not in st.session_state:
+    threading.Thread(target=watch_for_disconnect, daemon=True).start()
+    st.session_state.watchdog_started = True
+# ----------------------------------
 
 # --- IMPORT REWRITER LOGIC ---
 from summarize_archive import (

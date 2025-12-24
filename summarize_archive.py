@@ -3,6 +3,7 @@ import logging
 import os
 import sys
 import requests
+from dotenv import load_dotenv
 from logging.handlers import RotatingFileHandler
 from dataclasses import dataclass
 from datetime import date

@@ -20,3 +20,6 @@ __pycache__/
 # --- Operating System Junk ---
 .DS_Store
 Thumbs.dbvvenv/
+Stories/
+Old Versions/
+*.app/

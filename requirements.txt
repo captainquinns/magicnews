@@ -6,3 +6,4 @@ lxml
 certifi
 urllib3<2
 pyperclip
+python-dotenv
