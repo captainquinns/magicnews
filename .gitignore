@@ -4,3 +4,19 @@ venv/
 __pycache__/
 *.pyc
 .DS_Store
+# --- Secrets (CRITICAL) ---
+.env
+.env.local
+
+# --- Python Virtual Environments ---
+venv/
+.venv/
+env/
+
+# --- Python Junk (Compiled files) ---
+__pycache__/
+*.pyc
+
+# --- Operating System Junk ---
+.DS_Store
+Thumbs.dbvvenv/
